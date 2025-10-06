@@ -6,6 +6,7 @@ height=0 by the n'th jump?
 The recursive decomposition for this is 
 
 $opt(i,y)=min(opt(i-1, y-a_i), opt(i-1, y+a_i), y)$
+actually $opt(i,y)=max(min(opt(i-1, y-a_i), opt(i-1, y+a_i)), y)$
 
 We can turn this into a table easily since y is at most 1000,
 and i is at most 40.
