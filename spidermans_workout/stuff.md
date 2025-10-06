@@ -28,3 +28,6 @@ Here we easily identity the overlapping subproblems in height. To choose the bes
 we just pick the one that has the lower max height (current height included in max height).
 In addition, we can eliminate heights less than 0. And with this approach, keeping track
 of the sequence is trivial, as we can just have a lookup structure.
+
+For the record we can also just store a string with every i,h in the opt table.
+But I did not realize that until after the set implementation was made manifest.
